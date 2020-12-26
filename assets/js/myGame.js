@@ -45,14 +45,6 @@ function drawPlay() {
     context.closePath();
 }
 
-function drawRestart() {
-    context.beginPath();
-    context.drawImage(restart, 250, 250);
-    context.fill();
-    clickable;
-    context.closePath();
-}
-
 function checkForCollision() {
     if(isWithin(targetX, x, x + sideLength) || isWithin(targetX + targetLength, x, x + sideLength)) {
         if(isWithin(targetY, y, y + sideLength) || isWithin(targetY + targetLength, y, y + sideLength)) {
@@ -107,7 +99,7 @@ function draw() {
     context.fillRect(targetX, targetY, targetLength, targetLength);
 
     if(time <= 0){
-        alert('Times out');
+        alert('Times out!');
         document.location.reload();
     } else {
         window.requestAnimationFrame(draw);
