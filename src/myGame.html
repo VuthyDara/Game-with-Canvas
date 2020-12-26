@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #myGame {
+                width: 600px;
+                height: 400px;
+                border: 1px black solid;
+                position: relative;
+            }
+            #startBtn {
+                border: none;
+                background: none;
+                position: absolute;
+                top: 25%;
+                left: 40%;
+                z-index: 1;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" id="startBtn" onclick="draw()"><img src="https://1.bp.blogspot.com/-fVAKH-3TLuo/W5onDDHje0I/AAAAAAAAB4I/q2ooE6GuzQkS80dtw1JILXjFWdfQ3IKkwCLcBGAs/s1600/breaoutplay.png"></button>
+        <canvas id="myGame" tabindex="1"></canvas>
+        <script src="../assets/js/myGame.js"></script>
+    </body>
+</html>
